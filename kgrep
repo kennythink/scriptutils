@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [ $# -lt 1 ]; then
+	echo "must with string parameter for grep."
+	exit 1
+fi
+grep --color -ri "$1" .

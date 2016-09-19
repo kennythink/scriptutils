@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# ksetbus rev0.2 2016-03-23
+# set quick link for remote folder access
+
+func_usage() {
+	echo "# ~/kbus -> flexible link"
+}
+
+SRC_DIR=`pwd`
+BUSDIR=~/kbus
+
+rm $BUSDIR/*
+mkdir -p $BUSDIR
+echo "$SRC_DIR -> $BUSDIR"
+ln -s $SRC_DIR/* $BUSDIR
+
+echo DONE

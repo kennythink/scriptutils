@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# combine of kfind and kgrep
+
+echo "---------------grep result as below:----------------- "
+kgrep $*
+
+echo "---------------find result as below:----------------- "
+kfind $*
